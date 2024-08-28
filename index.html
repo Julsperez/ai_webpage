@@ -4,93 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicios fotográficos profesionales con un toque único y elegante.">
-    <title>Servicios Fotográficos - [Tu Nombre/Marca]</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-image: url('ruta/a/tu/imagen-de-portada.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            color: black;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-        header h1 {
-            font-size: 4em;
-            margin: 0;
-        }
-        header p {
-            font-size: 1.5em;
-        }
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            padding: 1em;
-            text-align: right;
-        }
-        nav ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .content-section {
-            padding: 4em 2em;
-            text-align: center;
-        }
-        .content-section h2 {
-            font-size: 2.5em;
-            margin-bottom: 1em;
-        }
-        .portfolio-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-        }
-        .portfolio-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        .services, .about, .testimonials, .contact {
-            background-color: #fff;
-            padding: 50px 20px;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            padding: 2em 0;
-            text-align: center;
-        }
-        footer p {
-            margin: 0;
-        }
-    </style>
+    <title>Servicios Fotográficos - Julio Pérez</title>
+    
+    <!-- Vinculación al archivo de estilos CSS externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- Encabezado con imagen de fondo y barra de navegación -->
     <header>
         <nav>
             <ul>
@@ -103,12 +24,13 @@
             </ul>
         </nav>
         <div>
-            <h1>Tu Nombre/Marca</h1>
+            <h1>Julio Pérez</h1>
             <p>Capturando momentos, creando recuerdos</p>
-            <a href="#contacto" style="color:white; text-decoration:underline;">Reserva una Sesión</a>
+            <a href="#contacto" class="cta-button">Reserva una Sesión</a>
         </div>
     </header>
 
+    <!-- Sección del Portafolio con una galería de imágenes -->
     <section id="portafolio" class="content-section">
         <h2>Portafolio</h2>
         <div class="portfolio-grid">
@@ -125,22 +47,35 @@
         </div>
     </section>
 
+    <!-- Sección de Servicios -->
     <section id="servicios" class="services content-section">
         <h2>Servicios</h2>
         <p>Descripción de los servicios que ofreces.</p>
         <p>Paquetes de servicios con precios.</p>
     </section>
 
+    <!-- Sección Sobre Mí -->
     <section id="sobre-mi" class="about content-section">
-        <h2>Sobre mí</h2>
-        <p>Biografía y enfoque profesional.</p>
+        <div class="about-container">
+            <!-- Columna Izquierda: Imagen de Fondo -->
+            <div class="about-image">
+                <!-- La imagen se coloca como fondo en CSS -->
+            </div>
+            <!-- Columna Derecha: Texto de la Biografía -->
+            <div class="about-text">
+                <h2>Sobre Mí</h2>
+                <p>Soy Julio Pérez, fotógrafo especializado en retrato empresarial y arte visual, con experiencia en fotografía gastronómica y detrás de escena en cine independiente. Mi objetivo es capturar momentos únicos y crear imágenes que no solo sean visualmente impactantes, sino que también cuenten una historia poderosa.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- Sección de Testimonios -->
     <section id="testimonios" class="testimonials content-section">
         <h2>Testimonios</h2>
         <p>Comentarios de clientes satisfechos.</p>
     </section>
 
+    <!-- Sección de Contacto -->
     <section id="contacto" class="contact content-section">
         <h2>Contacto</h2>
         <form action="ruta/a/tu/script-de-envio" method="post">
@@ -152,8 +87,9 @@
         <p>Ubicación y redes sociales.</p>
     </section>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2024 Tu Nombre/Marca. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Julio Pérez. Todos los derechos reservados.</p>
     </footer>
 
 </body>
