@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Servicios fotográficos profesionales con un toque único y elegante.">
+    <title>Servicios Fotográficos - [Tu Nombre/Marca]</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-image: url('ruta/a/tu/imagen-de-portada.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            color: black;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        header h1 {
+            font-size: 4em;
+            margin: 0;
+        }
+        header p {
+            font-size: 1.5em;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 1em;
+            text-align: right;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content-section {
+            padding: 4em 2em;
+            text-align: center;
+        }
+        .content-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 1em;
+        }
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .services, .about, .testimonials, .contact {
+            background-color: #fff;
+            padding: 50px 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 2em 0;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div>
+            <h1>Tu Nombre/Marca</h1>
+            <p>Capturando momentos, creando recuerdos</p>
+            <a href="#contacto" style="color:white; text-decoration:underline;">Reserva una Sesión</a>
+        </div>
+    </header>
+
+    <section id="portafolio" class="content-section">
+        <h2>Portafolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="ruta/a/tu/imagen1.jpg" alt="Descripción de la imagen 1">
+            </div>
+            <div class="portfolio-item">
+                <img src="ruta/a/tu/imagen2.jpg" alt="Descripción de la imagen 2">
+            </div>
+            <div class="portfolio-item">
+                <img src="ruta/a/tu/imagen3.jpg" alt="Descripción de la imagen 3">
+            </div>
+            <!-- Agrega más imágenes según sea necesario -->
+        </div>
+    </section>
+
+    <section id="servicios" class="services content-section">
+        <h2>Servicios</h2>
+        <p>Descripción de los servicios que ofreces.</p>
+        <p>Paquetes de servicios con precios.</p>
+    </section>
+
+    <section id="sobre-mi" class="about content-section">
+        <h2>Sobre mí</h2>
+        <p>Biografía y enfoque profesional.</p>
+    </section>
+
+    <section id="testimonios" class="testimonials content-section">
+        <h2>Testimonios</h2>
+        <p>Comentarios de clientes satisfechos.</p>
+    </section>
+
+    <section id="contacto" class="contact content-section">
+        <h2>Contacto</h2>
+        <form action="ruta/a/tu/script-de-envio" method="post">
+            <input type="text" name="nombre" placeholder="Tu Nombre" required>
+            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <p>Ubicación y redes sociales.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Tu Nombre/Marca. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
