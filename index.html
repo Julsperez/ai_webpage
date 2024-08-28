@@ -33,25 +33,74 @@
     <!-- Sección del Portafolio con una galería de imágenes -->
     <section id="portafolio" class="content-section">
         <h2>Portafolio</h2>
-        <div class="portfolio-grid">
+        <div class="portfolio-container">
+            <!-- Sub-sección: Retrato -->
             <div class="portfolio-item">
-                <img src="ruta/a/tu/imagen1.jpg" alt="Descripción de la imagen 1">
+                <h3>Retrato</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
             </div>
+    
+            <!-- Sub-sección: Fotografía Análoga -->
             <div class="portfolio-item">
-                <img src="ruta/a/tu/imagen2.jpg" alt="Descripción de la imagen 2">
+                <h3>Fotografía Análoga</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
             </div>
+    
+            <!-- Sub-sección: Fotografía Gastronómica -->
             <div class="portfolio-item">
-                <img src="ruta/a/tu/imagen3.jpg" alt="Descripción de la imagen 3">
+                <h3>Fotografía Gastronómica</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
             </div>
-            <!-- Agrega más imágenes según sea necesario -->
+    
+            <!-- Sub-sección: Fotografía de Producto -->
+            <div class="portfolio-item">
+                <h3>Fotografía de Producto</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
+            </div>
+    
+            <!-- Sub-sección: Fotografía Básica -->
+            <div class="portfolio-item">
+                <h3>Fotografía Básica</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
+            </div>
+    
+            <!-- Sub-sección: Fotografía Experimental -->
+            <div class="portfolio-item">
+                <h3>Fotografía Experimental</h3>
+                <div class="portfolio-image" style="background-image: url('./assets/basica.jpg');"></div>
+            </div>
         </div>
     </section>
 
     <!-- Sección de Servicios -->
     <section id="servicios" class="services content-section">
-        <h2>Servicios</h2>
-        <p>Descripción de los servicios que ofreces.</p>
-        <p>Paquetes de servicios con precios.</p>
+        <div class="services-container">
+            <h2>Servicios</h2>
+    
+            <!-- Servicio: Fotografía de Retrato -->
+            <div class="service-item">
+                <h4>Fotografía de Retrato</h4>
+                <p>Captura la esencia de tu personalidad con retratos profesionales que destacan tu mejor versión. Perfecto para perfiles, portafolios y redes sociales.</p>
+            </div>
+    
+            <!-- Servicio: Fotografía Gastronómica -->
+            <div class="service-item">
+                <h4>Fotografía Gastronómica</h4>
+                <p>Transforma tus platos en obras de arte visuales. Ideal para restaurantes, chefs y marcas culinarias que buscan atraer a su audiencia en redes sociales.</p>
+            </div>
+    
+            <!-- Servicio: Asistencia de Fotografía y Video -->
+            <div class="service-item">
+                <h4>Asistencia de Fotografía y Video</h4>
+                <p>Ofrezco asistencia técnica y creativa en proyectos de fotografía y video, asegurando que tu visión se haga realidad con calidad profesional.</p>
+            </div>
+    
+            <!-- Servicio adicional: Creación de Contenido para Redes Sociales -->
+            <div class="service-item">
+                <h4>Creación de Contenido para Redes Sociales</h4>
+                <p>Diseño y produzco contenido visual que impulsa tu presencia en redes sociales, garantizando que cada imagen y video cuente una historia convincente.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Sección Sobre Mí -->
@@ -71,20 +120,60 @@
 
     <!-- Sección de Testimonios -->
     <section id="testimonios" class="testimonials content-section">
-        <h2>Testimonios</h2>
-        <p>Comentarios de clientes satisfechos.</p>
+        <div class="testimonials-container">
+            <h2>Testimonios</h2>
+            
+            <div class="testimonial">
+                <p class="testimonial-text">"El trabajo de Julio capturó la esencia de nuestra boda de una manera única. Cada foto cuenta una historia."</p>
+                <p class="testimonial-name">- María González</p>
+            </div>
+    
+            <div class="testimonial">
+                <p class="testimonial-text">"Julio tiene un ojo increíble para los detalles. Sus fotos de producto han elevado nuestra marca a otro nivel."</p>
+                <p class="testimonial-name">- Alejandro Romero</p>
+            </div>
+    
+            <div class="testimonial">
+                <p class="testimonial-text">"Cada sesión con Julio es una experiencia divertida y profesional. Su talento es insuperable."</p>
+                <p class="testimonial-name">- Lucía Pérez</p>
+            </div>
+    
+            <div class="testimonial">
+                <p class="testimonial-text">"La fotografía análoga de Julio me llevó de vuelta a los tiempos más nostálgicos. Un trabajo excepcional."</p>
+                <p class="testimonial-name">- Carlos Fernández</p>
+            </div>
+    
+            <div class="testimonial">
+                <p class="testimonial-text">"Su enfoque creativo y experimental es justo lo que necesitábamos para nuestro proyecto artístico. ¡Recomendado!"</p>
+                <p class="testimonial-name">- Sofía Martínez</p>
+            </div>
+    
+            <div class="testimonial-controls">
+                <button id="prev-testimonial" class="control-button">Anterior</button>
+                <button id="next-testimonial" class="control-button">Siguiente</button>
+            </div>
+        </div>
     </section>
+    
 
     <!-- Sección de Contacto -->
     <section id="contacto" class="contact content-section">
-        <h2>Contacto</h2>
-        <form action="ruta/a/tu/script-de-envio" method="post">
-            <input type="text" name="nombre" placeholder="Tu Nombre" required>
-            <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
-            <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-        <p>Ubicación y redes sociales.</p>
+        <div class="contact-container">
+            <h2>Contacto</h2>
+            <p>¿Tienes alguna pregunta o te gustaría trabajar conmigo? ¡Envíame un mensaje!</p>
+            <form action="ruta/a/tu/script-de-envio" method="post" class="contact-form">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required>
+    
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" placeholder="Tu Correo Electrónico" required>
+    
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje" required></textarea>
+    
+                <button type="submit" class="submit-button">Enviar Mensaje</button>
+            </form>
+        </div>
     </section>
 
     <!-- Pie de página -->
@@ -92,5 +181,7 @@
         <p>&copy; 2024 Julio Pérez. Todos los derechos reservados.</p>
     </footer>
 
+
+    <script src="app.js"></script>
 </body>
 </html>
