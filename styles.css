@@ -116,6 +116,134 @@ footer p {
     font-weight: bold;
 }
 
+
+/* Mobile-first Styles */
+
+/* Contenedor principal del portafolio */
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo de cada sub-sección del portafolio */
+.portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título de la sub-sección */
+.portfolio-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Imagen de fondo para cada categoría */
+.portfolio-image {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+/* Estilos para tablets y pantallas más grandes */
+@media (min-width: 768px) {
+    .portfolio-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .portfolio-item {
+        width: 48%;
+    }
+
+    .portfolio-image {
+        height: 250px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+    .portfolio-item {
+        width: 30%;
+    }
+
+    .portfolio-image {
+        height: 300px;
+    }
+}
+
+
+/* Mobile-first Styles */
+
+/* Contenedor principal de la sección "Servicios" */
+.services-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo del título de la sección */
+.services-container h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo de cada ítem de servicio */
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Estilo del título de cada servicio */
+.service-item h4 {
+    font-size: 1.8em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Estilo del texto descriptivo de cada servicio */
+.service-item p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .services-container {
+        padding: 40px;
+    }
+
+    .services-container h2 {
+        font-size: 3em;
+    }
+
+    .service-item h3 {
+        font-size: 2em;
+    }
+
+    .service-item p {
+        font-size: 1.2em;
+    }
+}
+
+
+
 /* Mobile-first Styles */
 
 /* Contenedor principal de la sección "Sobre Mí" */
@@ -212,3 +340,194 @@ footer p {
         font-size: 1.3em;
     }
 }
+
+
+/* Mobile-first Styles */
+
+/* Contenedor principal de la sección "Testimonios" */
+.testimonials-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Estilo del título de la sección */
+.testimonials-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo del texto del testimonio */
+.testimonial-text {
+    font-size: 1.2em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Estilo del nombre de la persona que da el testimonio */
+.testimonial-name {
+    font-size: 1em;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Ocultar todos los testimonios por defecto */
+.testimonial {
+    display: none;
+}
+
+/* Mostrar el primer testimonio por defecto */
+.testimonial.active {
+    display: block;
+}
+
+/* Estilo de los botones de control */
+.control-button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en los botones de control */
+.control-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .testimonials-container {
+        padding: 40px;
+    }
+
+    .testimonials-container h2 {
+        font-size: 2.5em;
+    }
+
+    .testimonial-text {
+        font-size: 1.3em;
+    }
+
+    .control-button {
+        font-size: 1.1em;
+    }
+}
+
+
+
+
+
+
+/* Mobile-first Styles */
+
+/* Contenedor principal de la sección "Contacto" */
+.contact-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo del título de la sección */
+.contact-container h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Estilo del texto introductorio */
+.contact-container p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+/* Estilo del formulario de contacto */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Estilo de las etiquetas del formulario */
+.contact-form label {
+    font-size: 1em;
+    color: #333;
+    text-align: left;
+}
+
+/* Estilo de los campos de entrada del formulario */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo específico para el campo de texto */
+.contact-form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Estilo del botón de envío */
+.submit-button {
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto hover en el botón de envío */
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+    .contact-container {
+        padding: 40px;
+    }
+
+    .contact-container h2 {
+        font-size: 2.5em;
+    }
+
+    .contact-container p {
+        font-size: 1.2em;
+    }
+
+    .contact-form {
+        gap: 20px;
+    }
+
+    .submit-button {
+        font-size: 1.3em;
+        padding: 15px 20px;
+    }
+}
+
